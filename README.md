@@ -7,12 +7,14 @@ Use cross-platform IPC<sup>[2]</sup> paths in node.
 Background
 ----------
 
-In node - instead of utilizing TCP - you can use IPC to communicate to other services like
+In node - instead of utilizing TCP - you can use IPC to communicate to other services like...
+
 - web servers (NGINX)
 - data structure stores (redis)
 - databases (MongoDB, Cassandra)
-- ...
-or to interconnect node applications, Electron frontends/backends etc.  
+- [place your own here :]
+
+...or to interconnect node applications, Electron frontends/backends etc.  
 
 **This can lead to large speed gains.**
 
