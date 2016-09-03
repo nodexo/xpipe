@@ -69,6 +69,6 @@ Further articles:
   
   
 [1]: xpipe stands for **xp (cross-platform) IPC path equalizer**  
-[2]: inter-process communication, see https://en.wikipedia.org/wiki/Inter-process_communication
-[3]: named pipe file system (in-memory)
+[2]: inter-process communication, see https://en.wikipedia.org/wiki/Inter-process_communication  
+[3]: named pipe file system (in-memory)  
 [4]: on Windows "/" without a leading drive letter represents the root of the current drive  
