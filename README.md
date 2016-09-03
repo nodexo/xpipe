@@ -23,7 +23,7 @@ that are referred by file descriptors.
 Unlike the former, Windows utilizes [named pipes](https://en.wikipedia.org/wiki/Named_pipe) living 
 in the root directory of the NPFS<sup>[3]</sup>, mounted under the special path \\\\.\\pipe\\.
 
-**To mitigate these differences, xpipe was born...**
+**To mitigate these differences and to to support building better cross-platform code, xpipe was born...**
 
 Usage
 -----
