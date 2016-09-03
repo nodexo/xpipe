@@ -18,11 +18,8 @@ In node - instead of utilizing TCP - you can use IPC to communicate to other ser
 
 **This can lead to large speed gains.**
 
-On unixoid operating systems - e.g. Linux and OS X - this is achieved by using 
-[Unix domain sockets](https://en.wikipedia.org/wiki/Unix_domain_socket) that 
-are referred by file descriptors.
-
-Unlike the former, Windows utilizes [named pipes](https://en.wikipedia.org/wiki/Named_pipe) living 
+On unixoid operating systems - e.g. Linux and OS X - we use [Unix domain sockets](https://en.wikipedia.org/wiki/Unix_domain_socket) 
+that are referred by file descriptors. Unlike the former, Windows utilizes [named pipes](https://en.wikipedia.org/wiki/Named_pipe) living 
 in the root directory of the NPFS<sup>[3]</sup>, mounted under the special path \\.\pipe\.
 
 To mitigate these differences, xpipe was born...
