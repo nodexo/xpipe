@@ -1,6 +1,6 @@
 {
   "name": "xpipe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use cross-platform IPC paths in node.",
   "main": "index.js",
   "scripts": {
