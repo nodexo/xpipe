@@ -1,6 +1,6 @@
 
-xpipe[1]
-========
+xpipe<sup>[1]</sup>
+===================
 
 Use cross-platform IPC paths.
 
@@ -25,7 +25,6 @@ console.log( `ipcPath: ${ipcPath}` );
 */
 ```
 
-
 When did Windows start accepting forward slash as a path separator?
 -------------------------------------------------------------------
 
@@ -38,12 +37,14 @@ already been used as a switch delimiter in MS-DOS 1.0 (introduced by by IBM).
 
 This behaviour could be bypassed (at least on modern Windows OS) by including 
 the path in double quotation marks:
-- cd c:/Windows and cd /Windows work[2]
-- *dir ./ /B* fails while *dir "./" /B* works
+- cd c:/Windows and cd /Windows work<sup>[2]</sup>
+- dir ./ /B fails while dir "./" /B works
 
 Further articles: 
 - https://en.m.wikipedia.org/wiki/Path_(computing)
 
-
-[1]: xpipe stands for xp (cross-platform) IPC path equalizer  
+  
+  
+  
+[1]: xpipe stands for **xp (cross-platform) IPC path equalizer**  
 [2]: on Windows "/" without a leading drive letter represents the root of the current drive  
