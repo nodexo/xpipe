@@ -23,8 +23,7 @@ that are referred by file descriptors.
 Unlike the former, Windows utilizes [named pipes](https://en.wikipedia.org/wiki/Named_pipe) living 
 in the root directory of the NPFS<sup>[3]</sup>, mounted under the special path \\\\.\\pipe\\.
 
-To mitigate these differences, xpipe was born...
-
+**To mitigate these differences, xpipe was born...**
 
 Usage
 -----
@@ -65,8 +64,8 @@ the path in double quotation marks:
 Further articles: 
 - https://en.m.wikipedia.org/wiki/Path_(computing)
 
-  
-  
+<p>&nbsp;</p> 
+<p>&nbsp;</p> 
   
 [1]: xpipe stands for **xp (cross-platform) IPC path equalizer**  
 [2]: inter-process communication, see https://en.wikipedia.org/wiki/Inter-process_communication  
