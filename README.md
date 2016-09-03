@@ -2,7 +2,7 @@
 xpipe<sup>[1]</sup>
 ===================
 
-Use cross-platform IPC paths.
+Use cross-platform IPC paths in node.
 
 Usage
 -----
@@ -33,12 +33,12 @@ So has every version of MS-DOS beginning with DOS 2.0 (the first version
 to support subdirectories).
 
 It's only been in command lines that "/" was not allowed when it had
-already been used as a switch delimiter in MS-DOS 1.0 (introduced by by IBM).
+already been used as a switch delimiter in MS-DOS 1.0 (introduced by IBM).
 
-This behaviour could be bypassed (at least on modern Windows OS) by including 
+This behaviour could be bypassed (at least on modern Windows systems) by including 
 the path in double quotation marks:
-- cd c:/Windows and cd /Windows work<sup>[2]</sup>
-- dir ./ /B fails while dir "./" /B works
+- **cd c:/Windows** and **cd /Windows** work<sup>[2]</sup>
+- **dir ./ /B** fails but **dir "./" /B** works
 
 Further articles: 
 - https://en.m.wikipedia.org/wiki/Path_(computing)
