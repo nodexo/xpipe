@@ -12,13 +12,17 @@ const xpipe = require('xpipe');
 
 let prefix = xpipe.prefix;
 console.log( `prefix:  ${prefix}` );
-// "" on Linux and OS X
-// "//./pipe/" on Windows
+/*
+  [empty string] on Linux and OS X
+  "//./pipe/" on Windows
+*/
 
 let ipcPath = xpipe.eq('/tmp/my.sock');
 console.log( `ipcPath: ${ipcPath}` );
-// "/tmp/my.sock" on Linux and OS X
-// "//./pipe/tmp/my.sock" on Windows
+/*
+  "/tmp/my.sock" on Linux and OS X
+  "//./pipe/tmp/my.sock" on Windows
+*/
 ```
 
 
@@ -41,5 +45,5 @@ Further articles:
 - https://en.m.wikipedia.org/wiki/Path_(computing)
 
 
-[1]: xpipe stands for xp (cross-platform) IPC path equalizer
-[2]: on Windows "/" without a leading drive letter represents the root of the current drive
+[1]: xpipe stands for xp (cross-platform) IPC path equalizer  
+[2]: on Windows "/" without a leading drive letter represents the root of the current drive  
