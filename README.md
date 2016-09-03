@@ -2,12 +2,12 @@
 xpipe<sup>[1]</sup>
 ===================
 
-Use cross-platform IPC<sup>[2]</sup> paths in node.
+Use cross-platform IPC paths in node.
 
 Background
 ----------
 
-In node - instead of utilizing TCP - you can use IPC to communicate to other services like...
+In node - instead of utilizing TCP - you can use IPC<sup>[2]</sup> to communicate to other services like
 
 - web servers (NGINX)
 - data structure stores (redis)
@@ -20,10 +20,16 @@ In node - instead of utilizing TCP - you can use IPC to communicate to other ser
 
 On unixoid operating systems - e.g. Linux and OS X - we use [Unix domain sockets](https://en.wikipedia.org/wiki/Unix_domain_socket) 
 that are referred by file descriptors.  
-Unlike the former, Windows utilizes [named pipes](https://en.wikipedia.org/wiki/Named_pipe) living 
+Windows utilizes [named pipes](https://en.wikipedia.org/wiki/Named_pipe) living 
 in the root directory of the NPFS<sup>[3]</sup>, mounted under the special path \\\\.\\pipe\\.
 
-**To mitigate these differences and to to support writing better cross-platform code, xpipe was born...**
+**To mitigate these differences and to to support writing portable code, xpipe was born...**
+
+Installation
+------------
+
+    npm install xpipe
+
 
 Usage
 -----
