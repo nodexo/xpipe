@@ -7,20 +7,20 @@ Use cross-platform IPC paths in node.
 Background
 ----------
 
-In node - instead of utilizing TCP - you can use IPC<sup>[2]</sup> to communicate to other services like
+In node - instead of using TCP - you can also take IPC<sup>[2]</sup> to communicate to services like
 
 - web servers (NGINX)
 - data structure stores (redis)
 - databases (MongoDB, Cassandra)
-- [place your own here :]
+- etc.
 
-...or to interconnect node applications, Electron frontends/backends etc.  
+or to interconnect node apps, Electron frontends/backends etc.  
 
 **This can lead to large speed gains.**
 
 On unixoid operating systems - e.g. Linux and OS X - we use [Unix domain sockets](https://en.wikipedia.org/wiki/Unix_domain_socket) 
 that are referred by file descriptors.  
-Windows utilizes [named pipes](https://en.wikipedia.org/wiki/Named_pipe) living 
+Windows has [named pipes](https://en.wikipedia.org/wiki/Named_pipe) for it, living 
 in the root directory of the NPFS<sup>[3]</sup>, mounted under the special path \\\\.\\pipe\\.
 
 **To mitigate these differences and to to support writing portable code, xpipe was born...**
@@ -70,7 +70,6 @@ the path in double quotation marks:
 Further articles: 
 - https://en.m.wikipedia.org/wiki/Path_(computing)
 
-<p>&nbsp;</p> 
 <p>&nbsp;</p> 
   
 [1]: xpipe stands for **xp (cross-platform) IPC path equalizer**  
